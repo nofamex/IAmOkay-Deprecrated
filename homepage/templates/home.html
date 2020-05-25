@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}IAmOkay - Are You?{% endblock %}
+{% block additional_css %}
+<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+{% endblock %}
+{% block main_content %}
+<div class="landing">
+    <div class="landing-content">
+        <div class="upper">
+            <span>#PEDULIDIRI</span>
+            <span>#BERANIBERUBAH</span>
+            <span>#YOUTHAREOKAY</span>
+        </div>
+        <div class="middle">
+            <span>I Am Okay</span>
+        </div>
+        <div class="bot">
+            <a href="#">Are You?</a>
+        </div>
+    </div>
+    <img src="{% static 'picture/v2.svg' %}" alt="picture" class="vector1">
+    <img src="{% static 'picture/v3.svg' %}" alt="picture" class="vector2">
+    <img src="{% static 'picture/v1.png' %}" alt="picture" class="vector3">
+</div>
+<div class="talk" id="talk">
+    <img src="{% static 'picture/v4.svg' %}" alt="picture" class="vector4">
+    <img src="{% static 'picture/v5.svg' %}" alt="picture" class="vector5">
+    <img src="{% static 'picture/v6.svg' %}" alt="picture" class="vector6">
+    <img src="{% static 'picture/header-talk.svg' %}" alt="header" class="header-talk">
+    <div class="talk-content">
+        <div class="left-content">
+            <span>Tell Us About Your Story</span>
+            <span>We are here to hear you</span>
+        </div>
+        <div class="right-content"></div>
+        <form action="#" class="form-talk">
+            <input type="text">
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+    <img src="{% static 'picture/window.svg' %}" alt="window" class="window">
+</div>
+<div class="playlist" id="playlist">
+    <h1 style="text-align: center;">PLAYLIST</h1>
+</div>
+<div class="magazine" id="magazine">
+    <h1 style="text-align: center;">MAGAZINE</h1>
+</div>
+{% endblock %}
