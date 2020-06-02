@@ -6,106 +6,87 @@
 {% endblock %}
 {% block main_content %}
 <div class="landing">
-  <div class="landing-content">
-    <div class="upper">
-      <span>#PEDULIDIRI</span>
-      <span>#BERANIBERUBAH</span>
-      <span>#YOUTHAREOKAY</span>
+    <div class="landing-content">
+        <div class="upper">
+            <span>#PEDULIDIRI</span>
+            <span>#BERANIBERUBAH</span>
+            <span>#YOUTHAREOKAY</span>
+        </div>
+        <div class="middle">
+            <span>I Am Okay</span>
+        </div>
+        <div class="bot">
+            <a href="#">Are You?</a>
+        </div>
     </div>
-    <div class="middle">
-      <span>I Am Okay</span>
-    </div>
-    <div class="bot">
-      <a href="#">Are You?</a>
-    </div>
-  </div>
-  <img src="{% static 'picture/v2.svg' %}" alt="picture" class="vector1">
-  <img src="{% static 'picture/v3.svg' %}" alt="picture" class="vector2">
-  <img src="{% static 'picture/v1.png' %}" alt="picture" class="vector3">
-</div>
-<div class="talk" id="talk">
-  <img src="{% static 'picture/v4.svg' %}" alt="picture" class="vector4">
-  <img src="{% static 'picture/v5.svg' %}" alt="picture" class="vector5">
-  <img src="{% static 'picture/v6.svg' %}" alt="picture" class="vector6">
-  <img src="{% static 'picture/header-talk.svg' %}" alt="header" class="header-talk">
-  <div class="talk-content">
-    <div class="left-content">
-      <span>Tell Us About Your Story</span>
-      <span>We are here to hear you</span>
-    </div>
-    <div class="right-content"></div>
-    <form action="#" class="form-talk">
-      <input type="text">
-      <input type="submit" value="SUBMIT">
-    </form>
-  </div>
-  <img src="{% static 'picture/window.svg' %}" alt="window" class="window">
+    <img src="{% static 'picture/v2.svg' %}" alt="picture" class="vector1">
+    <img src="{% static 'picture/v3.svg' %}" alt="picture" class="vector2">
+    <img src="{% static 'picture/v1.png' %}" alt="picture" class="vector3">
 </div>
 
+<div class="talk" id="talk">
+    <img src="{% static 'picture/v4.svg' %}" alt="picture" class="vector4">
+    <img src="{% static 'picture/v5.svg' %}" alt="picture" class="vector5">
+    <img src="{% static 'picture/v6.svg' %}" alt="picture" class="vector6">
+    <img src="{% static 'picture/header-talk.svg' %}" alt="header" class="header-talk">
+    <div class="talk-content">
+        <div class="left-content">
+            <span>Tell Us About Your Story</span>
+            <span>We are here to hear you</span>
+        </div>
+        <div class="right-content"></div>
+        <form action="#" class="form-talk">
+            <input type="text">
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+    <img src="{% static 'picture/window.svg' %}" alt="window" class="window">
+</div>
 
 <div class="container-fluid row playlist" id="playlist">
-  <img src="{% static 'picture/left-border-top-transparent.png' %}" alt="picture" class="bg-design size-100">
-  <img src="{% static 'picture/left-border-bottom-transparent.png' %}" alt="picture" class="bg-design size-50">
-  <img src="{% static 'picture/left-border-yellow.png' %}" alt="picture" class="bg-design size-10">
+    <img src="{% static 'picture/left-border-top-transparent.png' %}" alt="picture" class="bg-design size-100">
+    <img src="{% static 'picture/left-border-bottom-transparent.png' %}" alt="picture" class="bg-design size-50">
+    <img src="{% static 'picture/left-border-yellow.png' %}" alt="picture" class="bg-design size-10">
 
-  <div class="col-xl-6 col-sm-9 col-10 mt-5">
-    <div class="card playlist-card">
-      <h5 class="card-title playlist-header">
-        Let The Music Speak
-      </h5>
-      <div class="card-body" id="spotify">
-        <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1E4tOS1lg4Kdgo" frameborder="0" height="100%" width="100%" allowtransparency="true" allow="encrypted-media"></iframe>
-      </div>
+    <div class="col-xl-6 col-sm-9 col-10 mt-5">
+        <div class="card playlist-card">
+            <h5 class="card-title playlist-header">
+                Let The Music Speak
+            </h5>
+            <div class="card-body" id="spotify">
+                <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1E4tOS1lg4Kdgo" frameborder="0"
+                    height="100%" width="100%" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="col-xl-6 col-2 d-flex justify-content-center">
-    <img src="{% static 'picture/v-musicboi.png' %}" alt="picture" id="playlist-vector">
-  </div>
+    <div class="col-xl-6 col-2 d-flex justify-content-center">
+        <img src="{% static 'picture/v-musicboi.png' %}" alt="picture" id="playlist-vector">
+    </div>
 
 </div>
 <div class="magazine" id="magazine">
 
-  <h1 style="text-align: center;">MAGAZINE</h1>
+    <h1 style="text-align: center;">MAGAZINE</h1>
 
-  <div class="korsel">
-		<div>Content</div>
-		<div>Content</div>
-		<div>Content</div>
-  </div>
-
-  <script>
-    $(document).ready(function() {
-      $('.korsel').slick({
-        setting - name: setting - value
-      });
-    });
-
-    $('.center').slick({
-      centerMode: true,
-      centerPadding: '60px',
-      slidesToShow: 3,
-      responsive: [{
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-  </script>
+    <div class="korsel multiple-items">
+        <div class="items">
+            <h3>1</h3>
+        </div>
+        <div class="items">
+            <h3>2</h3>
+        </div>
+        <div class="items">
+            <h3>3</h3>
+        </div>
+        <div class="items">
+            <h3>4</h3>
+        </div>
+        <div class="items">
+            <h3>5</h3>
+        </div>
+    </div>
 
 </div>
+<script src="{% static 'js/slicker.js' %}"></script>
 {% endblock %}

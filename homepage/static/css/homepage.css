@@ -294,8 +294,23 @@ body {
   min-height: 100%;
 }
 
-/* -------------------- */
+/* Slicker*/
 
+.korsel {
+  display: flex;
+}
+
+.korsel .items {
+  width: 350px;
+  height: 250px;
+  margin: 50px;
+  background-color: grey;
+  text-align: center;
+}
+
+.korsel .items h3 {
+  margin-top: 125px;
+}
 
 /* -------------------- */
 
