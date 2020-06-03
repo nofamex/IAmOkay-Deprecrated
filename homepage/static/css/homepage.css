@@ -38,7 +38,7 @@ body {
 
 .magazine {
   position: relative;
-  background-color: #ffcc66;
+  background-color: #003466;
   width: 100%;
   height: 790px;
   overflow: hidden;
@@ -68,12 +68,10 @@ body {
   position: absolute;
   width: 850px;
   height: 350px;
-  top: 200px;
-  left: 500px;
 }
 
 .upper {
-  width: 100%;
+  width: 120%;
   height: 50px;
 }
 
@@ -81,8 +79,9 @@ body {
   display: inline;
   font-family: 'Fredoka One', sans-serif;
   color: white;
-  font-weight: 400;
+  /* font-weight: 400; */
   font-size: 30px;
+  letter-spacing: 0.155em;
   margin-right: 25px;
 }
 
@@ -139,12 +138,6 @@ body {
   position: absolute;
   width: 100%;
   top: -2px;
-}
-
-.header-talk {
-  position: absolute;
-  left: 400px;
-  top: 100px;
 }
 
 .talk-content {
@@ -226,6 +219,21 @@ body {
   left: 100px;
 }
 
+.section {
+  width: 100%;
+}
+
+.header {
+  margin-top: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.header>img {
+  z-index: 0;
+}
+
 
 /* -----------------------Playlist and Under----------------------- */
 
@@ -288,29 +296,128 @@ body {
 
 .size-50 {
   min-height: 50%;
+  max-height: 60%;
+  width: 105%;
 }
 
 .size-100 {
   min-height: 100%;
+  width: 105%;
+
 }
 
 /* Slicker*/
 
 .korsel {
   display: flex;
+  justify-content: center;
+
 }
 
 .korsel .items {
-  width: 350px;
-  height: 250px;
-  margin: 50px;
-  background-color: grey;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  padding: 10px;
 }
 
-.korsel .items h3 {
-  margin-top: 125px;
+.items-judul {
+  margin: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.items-sub-judul {
+  margin: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.items-img>img {
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.sub-separator {
+  background-color: #ffcc66;
+  border-radius: 25%;
+  padding: 0 10px;
+  margin: 0 5px;
+}
+
+.slick-prev {
+  margin-left: 40px;
+}
+
+.slick-next {
+  margin-right: 40px;
+}
+
+.slider {
+  width: 650px;
+  margin: 0 auto;
+}
+
+.slick-dots li {
+  font-size: 10px;
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 15px;
+  color: #ffcc66;
 }
 
 /* -------------------- */
 
+
+@media (max-width: 858px) {
+  .landing-content {
+    position: absolute;
+    width: 850px;
+    height: 350px;
+    top: 0;
+    left: 0;
+  }
+
+  .upper {
+    height: 0;
+  }
+
+  .upper span {
+    display: inline;
+    color: white;
+    font-size: 11px;
+    letter-spacing: 0.155em;
+    margin-right: 25px;
+  }
+
+  .landing-vector {
+    display: none;
+  }
+
+  .items-sub-judul>.cap {
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .sub-separator {
+    padding: 0px 5px;
+    margin: 10px 5px;
+    display: none;
+  }
+
+  .author {
+    font-size: 10px;
+    display: inline-block;
+  }
+
+}

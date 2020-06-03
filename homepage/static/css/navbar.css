@@ -21,12 +21,15 @@ nav {
 label.logo {
     position: absolute;
     color: #f2f2f2;
-    font-size: 30px;
     line-height: 60px;
+    font-size: 27px;
     padding: 0 30px;
+    padding-left: 35px;
     font-weight: 600;
     font-family: 'Fredoka One', sans-serif;
     left: 32px;
+    letter-spacing: 0.14em;
+
 }
 
 label.logo-pic {
@@ -83,7 +86,9 @@ a:hover {
 @media (max-width: 952px) {
     label.logo {
         font-size: 27px;
-        padding-left: 25px;
+        padding-left: 35px;
+        letter-spacing: 0.14em;
+
     }
 
     nav ul li a {
