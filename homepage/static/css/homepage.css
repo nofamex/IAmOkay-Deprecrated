@@ -8,7 +8,7 @@ body {
 
 .main-content {
   width: 100%;
-  height: 3000px;
+  /* height: 3000px; */
 }
 
 .landing {
@@ -24,7 +24,9 @@ body {
   background-color: #ffcc66;
   width: 100%;
   height: 790px;
-  overflow: hidden;
+  /* overflow: normal;
+  white-space: nowrap; */
+  
 }
 
 .playlist {
@@ -310,6 +312,7 @@ body {
 
 .korsel {
   display: flex;
+  margin-top: 100px;
   justify-content: center;
 
 }
@@ -386,14 +389,10 @@ body {
     left: 0;
   }
 
-  .upper {
-    height: 0;
-  }
-
   .upper span {
     display: inline;
     color: white;
-    font-size: 11px;
+    font-size: 150%;
     letter-spacing: 0.155em;
     margin-right: 25px;
   }
@@ -402,8 +401,14 @@ body {
     display: none;
   }
 
+  .land-cont{
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+  }
+  
   .items-sub-judul>.cap {
-    font-size: 10px;
+    /* font-size: 1em; */
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -419,5 +424,24 @@ body {
     font-size: 10px;
     display: inline-block;
   }
+  
+  .middle>span{
+    font-size: 500%;
+    white-space: normal;
+  }
 
+  .korsel{
+    margin-top:50px;
+  }
+  
+  .magazine{
+    /* height: 100px; */
+  }
+  
+  /* --talk-- */
+
+
+  
+  /* -------- */
+  
 }
