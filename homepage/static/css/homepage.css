@@ -8,9 +8,8 @@ body {
 
 .main-content {
   width: 100%;
-  /* height: 3000px; */
 }
-
+/* ---landing and talk--- */
 .landing {
   position: relative;
   background-color: #003466;
@@ -24,8 +23,7 @@ body {
   background-color: #ffcc66;
   width: 100%;
   height: 790px;
-  /* overflow: normal;
-  white-space: nowrap; */
+  overflow: hidden;
   
 }
 
@@ -33,7 +31,6 @@ body {
   position: relative;
   background-color: #336799;
   width: 100%;
-  /* height: 790px; */
   overflow: hidden;
 
 }
@@ -46,20 +43,6 @@ body {
   overflow: hidden;
 }
 
-.vector1 {
-  position: absolute;
-  height: 1700px;
-  top: -350px;
-  width: 100%;
-}
-
-.vector2 {
-  position: absolute;
-  height: 1600px;
-  top: -410px;
-  width: 100%;
-}
-
 .vector3 {
   position: absolute;
   height: 720px;
@@ -70,6 +53,8 @@ body {
   position: absolute;
   width: 850px;
   height: 350px;
+  top: 200px;
+  left: 470px;
 }
 
 .upper {
@@ -81,7 +66,6 @@ body {
   display: inline;
   font-family: 'Fredoka One', sans-serif;
   color: white;
-  /* font-weight: 400; */
   font-size: 30px;
   letter-spacing: 0.155em;
   margin-right: 25px;
@@ -120,26 +104,6 @@ body {
 .bot a:hover {
   color: white;
   background-color: #003466;
-}
-
-.vector4 {
-  position: absolute;
-  width: 1600px;
-  left: -30px;
-  top: -10px;
-}
-
-.vector5 {
-  position: absolute;
-  width: 1600px;
-  left: -30px;
-  top: -10px;
-}
-
-.vector6 {
-  position: absolute;
-  width: 100%;
-  top: -2px;
 }
 
 .talk-content {
@@ -237,7 +201,7 @@ body {
 }
 
 
-/* -----------------------Playlist and Under----------------------- */
+/* ---Playlist and Under--- */
 
 
 .kartu {
@@ -249,7 +213,6 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  /* height:  */
   min-height: 600px;
   max-height: 790px;
 }
@@ -267,9 +230,6 @@ body {
   height: 60%;
   z-index: 0;
   bottom: 270px;
-  /* left: 1015px;
-  top: 1759px; */
-
 }
 
 .playlist-card {
@@ -312,7 +272,7 @@ body {
 
 .korsel {
   display: flex;
-  margin-top: 100px;
+  margin-top: 80px;
   justify-content: center;
 
 }
@@ -377,16 +337,17 @@ body {
   color: #ffcc66;
 }
 
-/* -------------------- */
+/* Responsive */
 
 
 @media (max-width: 858px) {
+  /* --Landing-- */
   .landing-content {
     position: absolute;
-    width: 850px;
+    width: 100%;
     height: 350px;
-    top: 0;
-    left: 0;
+    top: 200px;
+    left: 20px;
   }
 
   .upper span {
@@ -394,40 +355,10 @@ body {
     color: white;
     font-size: 150%;
     letter-spacing: 0.155em;
-    margin-right: 25px;
   }
 
   .landing-vector {
     display: none;
-  }
-
-  .land-cont{
-    display: flex;
-    align-items: center;
-    margin-top: 200px;
-  }
-  
-  .items-sub-judul>.cap {
-    /* font-size: 1em; */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .sub-separator {
-    padding: 0px 5px;
-    margin: 10px 5px;
-    display: none;
-  }
-
-  .author {
-    font-size: 10px;
-    display: inline-block;
-  }
-  
-  .middle>span{
-    font-size: 500%;
-    white-space: normal;
   }
 
   .korsel{
@@ -439,9 +370,127 @@ body {
   }
   
   /* --talk-- */
-
-
+  .talk-content {
+    width: 800px;
+    height: 350px;
+    left: 30px;
+    top: 250px;
+  }
   
-  /* -------- */
+  .form-talk input[type=text] {
+    width: 450px;
+    height: 320px;
+  }
   
+  .form-talk input[type=submit] {
+    left: 280px;
+    font-size: 20px;
+  }
+
+  .window {
+    width: 150px;
+    left: 10px;
+    top: 450px;
+  }
+}
+
+@media (max-width: 770px) {
+  /* --talk-- */
+ .middle span {
+   font-size: 120px;
+ }
+
+ .bot {
+   margin-top: 0;
+ }
+}
+
+@media (max-width: 570px) {
+  /* --landing-- */
+  .middle {
+    margin-top: 30px;
+  }
+  .middle span {
+    font-size: 100px;
+  }
+
+  .bot {
+    margin-top: -30px;
+  }
+
+  /* --talk-- */
+  .talk-content {
+    width: 550px;
+    height: 350px;
+    left: -25px;
+    top: 300px;
+    transform: rotate(270deg);
+  }
+
+  .left-content {
+    width: 150px;
+    overflow: hidden;
+  }
+
+  .left-content span {
+    font-size: 17px;
+    transform: rotate(90deg);
+    margin-top: 250px;
+    margin-left: 10px;
+  }
+
+  .right-content {
+    left: 100px;
+  }
+
+  .form-talk {
+    left: 190px;
+    top: -11px;
+  }
+  
+  .form-talk input[type=text] {
+    transform: rotate(90deg);
+    width: 320px;
+    height:380px;
+    font-size: 20px;
+  }
+  
+  .form-talk input[type=submit] {
+    transform: rotate(90deg);
+    left: -50px;
+    bottom: 90px;
+    font-size: 15px;
+  }
+
+  .window {
+    width: 120px;
+    height: 200px;
+    left: 30px;
+    top: 600px;
+  }
+}
+
+@media (max-width: 380px) {
+  /* --landing-- */
+  .middle {
+    margin-top: 70px;
+  }
+  .middle span {
+    font-size: 70px;
+  }
+
+  .bot {
+    margin-top: -70px;
+  }
+
+  .bot a {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* --talk-- */
+  .talk-content {
+    left: -90px;
+  }
 }
