@@ -5,11 +5,11 @@
         <i class="fas fa-bars"></i>
     </label>
     <label class="logo-pic"><img src="{% static 'picture/logo.png' %}" alt="Logo" class="logo-pic"></label>
-    <label class="logo">IAmOkay</label>
+    <label class="logo"><a href="{% url 'homepage:homepage' %}" style="color: white;">IAmOkay</a></label>
     <ul>
         <li><a href="#talk">Lets Talk About You</a></li>
         <li><a href="#playlist">Playlist</a></li>
         <li><a href="#magazine">Online Magazine</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="{% url 'announcement:landing' %}">Announcement</a></li>
     </ul>
 </nav>

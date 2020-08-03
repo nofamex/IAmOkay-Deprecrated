@@ -1,0 +1,496 @@
+body {
+  font-family: 'Fredoka One', sans-serif;
+
+  position: relative;
+  background-color: #003466;
+  scroll-behavior: smooth;
+}
+
+.main-content {
+  width: 100%;
+}
+/* ---landing and talk--- */
+.landing {
+  position: relative;
+  background-color: #003466;
+  width: 100%;
+  height: 790px;
+  overflow: hidden;
+}
+
+.talk {
+  position: relative;
+  background-color: #ffcc66;
+  width: 100%;
+  height: 790px;
+  overflow: hidden;
+  
+}
+
+.playlist {
+  position: relative;
+  background-color: #336799;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.magazine {
+  position: relative;
+  background-color: #003466;
+  width: 100%;
+  height: 790px;
+  overflow: hidden;
+}
+
+.vector3 {
+  position: absolute;
+  height: 720px;
+  top: 70px;
+}
+
+.landing-content {
+  position: absolute;
+  width: 850px;
+  height: 350px;
+  top: 200px;
+  left: 470px;
+}
+
+.upper {
+  width: 120%;
+  height: 50px;
+}
+
+.upper span {
+  display: inline;
+  font-family: 'Fredoka One', sans-serif;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 0.155em;
+  margin-right: 25px;
+}
+
+.middle {
+  width: 100%;
+  height: 210px;
+}
+
+.middle span {
+  font-family: 'Fredoka One', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 160px;
+}
+
+.bot {
+  margin-top: 30px;
+  width: 100%;
+  height: 90px;
+}
+
+.bot a {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Fredoka One', sans-serif;
+  color: #003466;
+  font-weight: 400;
+  font-size: 50px;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px 25px;
+}
+
+.bot a:hover {
+  color: white;
+  background-color: #003466;
+}
+
+.talk-content {
+  position: absolute;
+  display: inline;
+  border-radius: 50px;
+  background-color: white;
+  width: 1000px;
+  height: 550px;
+  left: 230px;
+  top: 220px;
+}
+
+.left-content {
+  position: absolute;
+  height: 100%;
+  width: 330px;
+  background-color: #336799;
+  border-radius: 50px;
+}
+
+.left-content span {
+  margin-left: 20px;
+  margin-top: 20px;
+  display: block;
+  font-family: 'Fredoka One', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.right-content {
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  background-color: #336799;
+  left: 280px;
+}
+
+.form-talk {
+  position: absolute;
+  left: 330px;
+  top: 15px;
+  left: 340px;
+}
+
+.form-talk input {
+  display: block;
+}
+
+.form-talk input[type=text] {
+  width: 650px;
+  border-radius: 50px;
+  border-color: white;
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 30px;
+  height: 520px;
+  background-color: #c4c4c4;
+  color: black;
+}
+
+.form-talk input[type=submit] {
+  position: absolute;
+  background-color: #336799;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 50px;
+  border-color: #c4c4c4;
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  bottom: 20px;
+  left: 450px;
+}
+
+.window {
+  position: absolute;
+  top: 420px;
+  left: 100px;
+}
+
+.section {
+  width: 100%;
+}
+
+.header {
+  margin-top: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.header>img {
+  z-index: 0;
+}
+
+
+/* ---Playlist and Under--- */
+
+
+.kartu {
+  background-color: white;
+  color: red;
+}
+
+.playlist {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  min-height: 600px;
+  max-height: 790px;
+}
+
+#spotify {
+  height: 900px;
+  padding-top: 0;
+}
+
+#playlist-vector {
+  position: absolute;
+  max-width: 318px;
+  max-height: 731px;
+  justify-content: end;
+  height: 60%;
+  z-index: 0;
+  bottom: 270px;
+}
+
+.playlist-card {
+  background-color: #003466;
+  margin-top: 10%;
+  color: white;
+  height: 50%;
+  z-index: 1;
+}
+
+.playlist-header {
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.bg-design {
+  width: 100%;
+  position: absolute;
+  background-size: contain;
+}
+
+.size-10 {
+  min-height: 10%;
+}
+
+.size-50 {
+  min-height: 50%;
+  max-height: 60%;
+  width: 105%;
+}
+
+.size-100 {
+  min-height: 100%;
+  width: 105%;
+
+}
+
+/* Slicker*/
+
+.korsel {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+
+}
+
+.korsel .items {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+.items-judul {
+  margin: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.items-sub-judul {
+  margin: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.items-img>img {
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.sub-separator {
+  background-color: #ffcc66;
+  border-radius: 25%;
+  padding: 0 10px;
+  margin: 0 5px;
+}
+
+.slick-prev {
+  margin-left: 40px;
+}
+
+.slick-next {
+  margin-right: 40px;
+}
+
+.slider {
+  width: 650px;
+  margin: 0 auto;
+}
+
+.slick-dots li {
+  font-size: 10px;
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  font-size: 15px;
+  color: #ffcc66;
+}
+
+/* Responsive */
+
+
+@media (max-width: 858px) {
+  /* --Landing-- */
+  .landing-content {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    top: 200px;
+    left: 20px;
+  }
+
+  .upper span {
+    display: inline;
+    color: white;
+    font-size: 150%;
+    letter-spacing: 0.155em;
+  }
+
+  .landing-vector {
+    display: none;
+  }
+
+  .korsel{
+    margin-top:50px;
+  }
+  
+  .magazine{
+    /* height: 100px; */
+  }
+  
+  /* --talk-- */
+  .talk-content {
+    width: 800px;
+    height: 350px;
+    left: 30px;
+    top: 250px;
+  }
+  
+  .form-talk input[type=text] {
+    width: 450px;
+    height: 320px;
+  }
+  
+  .form-talk input[type=submit] {
+    left: 280px;
+    font-size: 20px;
+  }
+
+  .window {
+    width: 150px;
+    left: 10px;
+    top: 450px;
+  }
+}
+
+@media (max-width: 770px) {
+  /* --talk-- */
+ .middle span {
+   font-size: 120px;
+ }
+
+ .bot {
+   margin-top: 0;
+ }
+}
+
+@media (max-width: 570px) {
+  /* --landing-- */
+  .middle {
+    margin-top: 30px;
+  }
+  .middle span {
+    font-size: 100px;
+  }
+
+  .bot {
+    margin-top: -30px;
+  }
+
+  /* --talk-- */
+  .talk-content {
+    width: 550px;
+    height: 350px;
+    left: -25px;
+    top: 300px;
+    transform: rotate(270deg);
+  }
+
+  .left-content {
+    width: 150px;
+    overflow: hidden;
+  }
+
+  .left-content span {
+    font-size: 17px;
+    transform: rotate(90deg);
+    margin-top: 250px;
+    margin-left: 10px;
+  }
+
+  .right-content {
+    left: 100px;
+  }
+
+  .form-talk {
+    left: 190px;
+    top: -11px;
+  }
+  
+  .form-talk input[type=text] {
+    transform: rotate(90deg);
+    width: 320px;
+    height:380px;
+    font-size: 20px;
+  }
+  
+  .form-talk input[type=submit] {
+    transform: rotate(90deg);
+    left: -50px;
+    bottom: 90px;
+    font-size: 15px;
+  }
+
+  .window {
+    width: 120px;
+    height: 200px;
+    left: 30px;
+    top: 600px;
+  }
+}
+
+@media (max-width: 380px) {
+  /* --landing-- */
+  .middle {
+    margin-top: 70px;
+  }
+  .middle span {
+    font-size: 70px;
+  }
+
+  .bot {
+    margin-top: -70px;
+  }
+
+  .bot a {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* --talk-- */
+  .talk-content {
+    left: -90px;
+  }
+}

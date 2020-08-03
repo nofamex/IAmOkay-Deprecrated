@@ -1,0 +1,22 @@
+.landing {
+    padding: 75px 0px;
+    background-color: #003466;
+    width: 100%;
+    height: 1520px;
+    overflow: hidden;
+}
+
+.pic-head {
+    height: 600px;
+}
+
+.text-head{
+    color: #f2e1e1;
+    font-family: 'Fredoka One';
+    font-size: 48px;
+    text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mid {
+    height: 760px;
+}
