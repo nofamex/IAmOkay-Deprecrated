@@ -23,14 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '4vo^h*aho*qw-0+qh4trimt%bd0a-4*guihl3!oswf*5i_*y4^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True;
 
-<<<<<<< HEAD
 ALLOWED_HOSTS = ['localhost','iamokaybeta.herokuapp.com', '192.168.1.4', 'imaokay.id', 'www.iamokay.id']
-=======
-ALLOWED_HOSTS = ['localhost','iamokaybeta.herokuapp.com', '192.168.1.4']
-# ALLOWED_HOSTS = ['localhost','iamokaybeta.herokuapp.com', 'iamokay.id']
->>>>>>> 2dd7cba414d1dc47bda648e24f37c4ca018907b4
 
 
 # Application definition

@@ -6,6 +6,7 @@
 {% endblock %}
 {% block main_content %}
 <div class="landing">
+<img src="{% static 'picture/bg-lines-1.png'%}" alt="background" class="bg-lines-1">
     <div class="head fluid-container">
         <div class="row">
             <div class="col-lg-4 d-flex justify-content-center px-5">
@@ -16,8 +17,30 @@
             </div>
         </div>
     </div>
-    <div class="mid container p-0 m-10" style="margin-top: 48px;">
-        <img src="{% static 'picture/announce.jpeg' %}" alt="picture" style="width: 100%; height:100%">
+    <div class="mid container-fluid p-0 m-10 text-white text-center">
+        <h5 class="anc-judul">Pengumuman I Am Okay Challange MPLS untuk Kelas X SMAN 52 Jakarta</h5>
+
+        <div class="anc-subjudul">
+            <h1>Berikut Merupakan 3 Pemenang yang Berhasil Mendapatkan Predikat Karya Terbaik:</h1>
+        </div>
+
+        <div class="container winner">
+            <img src="{% static 'picture/juara/juara-1.png'%}"class="pic-juara" alt="">
+            <img src="{% static 'picture/juara/juara-2.png'%}"class="pic-juara" alt="">
+            <img src="{% static 'picture/juara/juara-3.png'%}"class="pic-juara" alt="">
+        </div>
+
+        <div class="anc-team">
+            <h3>Seluruh Tim Gerakan I Am Okay Mengucapkan Selamat Kepada 3 Siswa/i Pemenang “Challange MPLS SMAN 52 Jakarta”. Semoga Karya atau Cerita dari 3 Pemenang diatas dapat Menginspirasi Kita Semua.</h3>
+        </div>
+
+        <h4 class="anc-prize">Pemenang berhak mendapatkan piagam penghargaan & souvenir dari I Am Okay.</h4>
+
+        <div class="anc-bottom">
+            <p>Kampanye ini didukung Dinas Pendidikan Provinsi DKI Jakarta, Dinas Kesehatan Provinsi DKI Jakarta & Dinas Pariwisata dan Ekonomi Kreatif Provinsi DKI Jakarta.</p>
+            <p>I Am Okay, Are You?</p>
+            <p>#IAmOkay #PeduliDiri #BeraniBerubah</p>
+        </div>
     </div>
 </div>
 {% endblock %}
